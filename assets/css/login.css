@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.Box-signup {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxsignup {
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 400px;
+  height: 550px;
+  box-shadow: -5px 0px 27px 11px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: -5px 0px 27px 11px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: -5px 0px 27px 11px rgba(0, 0, 0, 0.17);
+}
+.parentsdangnhap a {
+  text-decoration: none;
+  color: black;
+}
+.alreadyacc a {
+  text-decoration: none;
+  color: black;
+}
+
+.signup {
+  font-size: 36px;
+  font-weight: 700;
+  margin-left: 44px;
+  margin-top: 33px;
+  text-align: center;
+}
+.alreadyacc {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login {
+  cursor: pointer;
+  color: green;
+  margin-left: 10px;
+}
+input {
+  border: 3px solid green;
+  border-radius: 9px;
+  width: 300px;
+  height: 42px;
+  padding: 0 8px;
+}
+.thongtin {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 27px;
+  margin-top: 30px;
+}
+.dangnhap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green;
+  border-radius: 9px;
+  margin-top: 31px;
+  width: 300px;
+  height: 42px;
+  background-color: green;
+  cursor: pointer;
+}
+.parentsdangnhap {
+  display: flex;
+  justify-content: center;
+}
+
+.dkdv {
+  text-align: center;
+  width: 300px;
+  height: 42px;
+}
+.DKDV {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.tick input {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.boxmailcheck {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: -15px;
+  align-items: center;
+}
+.forgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green;
+  border-radius: 9px;
+  margin-top: 31px;
+  width: 300px;
+  height: 42px;
+  background-color: rgb(100, 128, 0);
+  cursor: pointer;
+}
+.parentsforgot {
+  display: flex;
+  justify-content: center;
+}
+
+.parentsdangnhap:hover,
+.parentsforgot:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}

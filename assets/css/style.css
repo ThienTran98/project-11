@@ -1,0 +1,146 @@
+input {
+  outline: none;
+  border: none;
+  display: none;
+}
+button {
+  background-color: white;
+  border: none;
+}
+form:hover input {
+  display: inline-block;
+}
+.banner {
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.banner .text-logo {
+  color: #147c4c;
+  position: absolute;
+  top: 65px;
+  left: 90px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.banner .text-logo p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.section-1 {
+  padding: 100px;
+}
+.section-1 .inner-wrap {
+  display: flex;
+  gap: 32px;
+}
+.section-1 .inner-img {
+  width: 50%;
+  height: 400px;
+}
+.section-1 .inner-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+.section-1 .inner-content {
+  width: 50%;
+}
+.section-1 .inner-content h2 {
+  color: #147c4c;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.section-1 .inner-content .inner-content--decs {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: justify;
+}
+.section-1 .inner-content button {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.8;
+  color: #fff;
+  background-color: #147c4c;
+}
+.section-1 .inner-content button:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .section-1 {
+    padding: 30px 12px;
+  }
+  .section-1 .inner-wrap {
+    display: block;
+  }
+  .section-1 .inner-img {
+    width: 100%;
+  }
+  .section-1 .inner-content {
+    width: 100%;
+  }
+  .section-1 .inner-content h2 {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .section-1 .inner-content--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-wrap.flex-row-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  .section-1 {
+    padding: 30px 12px;
+  }
+  .section-1 .inner-wrap {
+    display: block;
+  }
+  .section-1 .inner-img {
+    width: 100%;
+  }
+  .section-1 .inner-content {
+    width: 100%;
+  }
+  .section-1 .inner-content h2 {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .section-1 .inner-content--decs {
+    font-size: 12px;
+  }
+  .section-1 .inner-content--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-wrap.flex-row-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
