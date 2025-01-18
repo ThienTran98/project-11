@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
+    <title>Giỏ hàng</title>
     <link rel="stylesheet" href="./assets/css/giohang.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link
@@ -51,9 +51,9 @@
               </li>
               <li><a href="douong.html"> THỨC UỐNG </a></li>
               <li><a href="notfound.html">SẢN PHẨM</a></li>
-              <li><a href="#">KHUYẾN MÃI</a></li>
-              <li><a href="#"> VỀ CHÚNG TÔI </a></li>
-              <li><a href="#">THẺ</a></li>
+              <li><a href="notfound.html">KHUYẾN MÃI</a></li>
+              <li><a href="notfound.html"> VỀ CHÚNG TÔI </a></li>
+              <li><a href="notfound.html">THẺ</a></li>
             </ul>
             <div class="form"><i class="fa-solid fa-magnifying-glass"></i></div>
           </div>
@@ -61,12 +61,45 @@
       </nav>
     </div>
     <div class="container">
-      <div class="cart">GIỎ HÀNG</div>
-      <div class="boxcart">
+      <h2 class="cart">GIỎ HÀNG</h2>
+      <div class="cart-container">
+        <div class="cart-content">
+          <h2>Sản phẩm mới thêm</h2>
+          <div class="cart-list">
+            <div class="cart-item">
+              <img
+                src="./assets/images/__1920x1080-20240828063810.jpg"
+                alt=""
+              />
+              <div class="cart-head">
+                <div class="cart-infor">
+                  <h2>Trà Sữa Trân Châu Đường Đen</h2>
+                  <p class="cart-infor-price">9.000.000</p>
+                  <p>x</p>
+                  <p class="cart-infor-quantity">1</p>
+                </div>
+                <div class="cart-body">
+                  <h3>Phân loại :</h3>
+                  <p>Xóa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-total-price">
+            <h3>Thành tiền :</h3>
+            <p class="total-price"></p>
+          </div>
+          <!-- 5000000 VNĐ -->
+        </div>
+        <div class="cart-btn">
+          <button>Thanh toán</button>
+        </div>
+      </div>
+      <!-- <div class="boxcart">
         <i class="fa-solid fa-cart-shopping"></i>
         <div class="giohangtrong">Giỏ hàng trống !!</div>
         <div class="themsp">Bạn tham khảo thêm các sản phẩm nhé !</div>
-      </div>
+      </div> -->
     </div>
 
     <footer>
@@ -99,5 +132,6 @@
         </p>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
