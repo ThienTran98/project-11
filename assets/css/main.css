@@ -175,27 +175,35 @@ nav.list li a {
 }
 nav.list .form {
   font-size: 15px;
+  padding: 0 4px;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  /* width: 40px; */
+
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid green;
-  border-radius: 50%;
-  margin-left: 24px;
+  border-radius: 8px;
+  margin-left: 16px;
 }
 
+.form-input {
+  padding-left: 8px;
+  font-size: 13px;
+  border: none;
+  display: block;
+  outline: none;
+  height: 40px;
+}
 nav.list .form i {
-  color: #000;
+  font-size: 16px;
+  color: #fab946;
+  cursor: pointer;
 }
 
-nav.list .form:hover {
+nav.list .form i:hover {
   opacity: 0.8;
   transition: all 0.3s ease-in;
-}
-
-nav.list .form:hover i {
   color: #147c4c;
 }
 
@@ -268,6 +276,7 @@ footer .list li {
   }
   nav.list .form {
     min-width: 50px;
+    display: none;
   }
   .banner .text-logo {
     left: 50%;
