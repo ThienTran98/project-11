@@ -44,7 +44,7 @@
         <div class="container">
           <div class="inner-wrap">
             <ul class="menu">
-              <li><a href="index.html"></a>TRANG CHỦ</li>
+              <li class="navigate"><a href="index.html"></a>TRANG CHỦ</li>
               <li><a href="sanpham.html">CÀ PHÊ</a></li>
               <li>
                 <a href="tra.html">TRÀ</a>
@@ -66,7 +66,7 @@
         <div class="cart-content">
           <h2>Sản phẩm mới thêm</h2>
           <div class="cart-list">
-            <div class="cart-item">
+            <!-- <div class="cart-item">
               <img
                 src="./assets/images/__1920x1080-20240828063810.jpg"
                 alt=""
@@ -83,7 +83,7 @@
                   <p>Xóa</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="cart-total-price">
             <h3>Thành tiền :</h3>
@@ -95,11 +95,6 @@
           <button>Thanh toán</button>
         </div>
       </div>
-      <!-- <div class="boxcart">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <div class="giohangtrong">Giỏ hàng trống !!</div>
-        <div class="themsp">Bạn tham khảo thêm các sản phẩm nhé !</div>
-      </div> -->
     </div>
 
     <footer>
@@ -133,5 +128,12 @@
       </div>
     </footer>
     <script src="./assets/js/main.js"></script>
+    <script>
+      //Quay về trang chủ
+
+      const handleNavigate = () => {
+        window.location.href = "index.html";
+      };
+    </script>
   </body>
 </html>

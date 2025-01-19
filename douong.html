@@ -44,7 +44,9 @@
         <div class="container">
           <div class="inner-wrap">
             <ul class="menu">
-              <li><a href="index.html"></a>TRANG CHỦ</li>
+              <li onclick="handleNavigate()">
+                <a href="index.html"></a>TRANG CHỦ
+              </li>
               <li><a href="sanpham.html">CÀ PHÊ</a></li>
               <li>
                 <a href="tra.html">TRÀ</a>
@@ -111,5 +113,12 @@
       </div>
     </footer>
     <script src="assets/js/main.js"></script>
+    <script>
+      //Quay về trang chủ
+
+      const handleNavigate = () => {
+        window.location.href = "index.html";
+      };
+    </script>
   </body>
 </html>

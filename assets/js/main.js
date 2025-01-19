@@ -292,28 +292,37 @@ renderData();
 // hàm render list coffee
 const renderDrinkOrder = () => {
   var html = "";
-  myListDrinkOrder.map((item) => {
-    return (html += `
-    <div class="cart-item">
- <img
-   src="${item.image}"
-   alt=""
- />
- <div class="cart-head">
-   <div class="cart-infor">
-     <h2>${item.name}</h2>
-     <p class="cart-infor-price">${item.price}</p>
-     <p>x</p>
-     <p class="cart-infor-quantity">1</p>
+  if (myListDrinkOrder.length > 0) {
+    myListDrinkOrder.map((item) => {
+      return (html += `
+      <div class="cart-item">
+   <img
+     src="${item.image}"
+     alt=""
+   />
+   <div class="cart-head">
+     <div class="cart-infor">
+       <h2>${item.name}</h2>
+       <p class="cart-infor-price">${item.price}</p>
+       <p>x</p>
+       <p class="cart-infor-quantity">1</p>
+     </div>
+     <div class="cart-body">
+       <h3>Phân loại :</h3>
+       <p onclick="handleRemoveItems('${item.id}')">Xóa</p>
+     </div>
    </div>
-   <div class="cart-body">
-     <h3>Phân loại :</h3>
-     <p onclick="handleRemoveItems('${item.id}')">Xóa</p>
    </div>
- </div>
- </div>
-    `);
-  });
+      `);
+    });
+  } else {
+    html += `  <div class="boxcart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <div class="giohangtrong">Giỏ hàng trống !!</div>
+    <div class="themsp">Bạn tham khảo thêm các sản phẩm nhé !</div>
+  </div>`;
+  }
+
   document.querySelector(".cart-list").innerHTML = html;
 };
 renderDrinkOrder();
