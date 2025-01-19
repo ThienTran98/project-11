@@ -5,3 +5,10 @@
   justify-content: center;
   text-align: center;
 }
+
+/* Responsive Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .content {
+    height: 750px;
+  }
+}
